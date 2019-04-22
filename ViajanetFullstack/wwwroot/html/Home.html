@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Home - Viajanet</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/home.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css"/>
+    
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-white mb-4">Viajanet</h2>
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <!-- form card login -->
+                        <div class="card rounded-0">
+                            <div class="card-header">
+                                <h3 class="mb-0">Preencha os dados de sua viagem</h3>
+                            </div>
+
+                            <div class="card-body">
+                                <form class="form" id="formCheckout" method="POST">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label" for="optIda">
+                                            <input type="radio" class="form-check-input" id="optIda" name="optIdaVolta" value="1">Somente ida
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label" for="optIdaEVolta">
+                                            <input type="radio" class="form-check-input" id="optIdaEVolta" checked="checked" name="optIdaVolta" value="2">Ida e volta
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="airportDeparture">Origem</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="airportDeparture" id="airportDeparture" required>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="airportArrive">Destino</label>
+                                        <input type="text" class="form-control form-control-lg rounded-0" name="airportArrive" id="airportArrive" required>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <label for="dataIda">Data de ida</label>
+                                            <input class="datepicker form-control" id="dataIda" required name="dataIda">
+                                        </div>
+
+                                        <div class="form-group col-sm-12 col-md-6">
+                                            <label for="dataVolta">Data de volta</label>
+                                            <input class="datepicker form-control" id="dataVolta" name="dataVolta">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label for="qtdAdultos" required>Adultos</label>
+                                            <select class="form-control" name="qtdAdultos" id="qtdAdultos">
+                                                <option value="1">1 Adulto</option>
+                                                <option value="2" selected>2 Adultos</option>
+                                                <option value="3">3 Adultos</option>
+                                                <option value="4">4 Adultos</option>
+                                                <option value="5">5 Adultos</option>
+                                                <option value="6">6 Adultos</option>
+                                                <option value="7">7 Adultos</option>
+                                                <option value="8">8 Adultos</option>
+                                                <option value="9">9 Adultos</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label for="qtdCriancas">Data de volta</label>
+                                            <select class="form-control" name="qtdCriancas" id="qtdCriancas">
+                                                <option value="0">Nenhuma</option>
+                                                <option value="1">1 Crianças</option>
+                                                <option value="2">2 Crianças</option>
+                                                <option value="3">3 Crianças</option>
+                                                <option value="4">4 Crianças</option>
+                                                <option value="5">5 Crianças</option>
+                                                <option value="6">6 Crianças</option>
+                                                <option value="7">7 Crianças</option>
+                                                <option value="8">8 Crianças</option>
+                                                <option value="9">9 Crianças</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group col-sm-12 col-md-4">
+                                            <label for="qtdBebes">Bebês</label>
+                                            <select class="form-control" name="qtdBebes" id="qtdBebes">
+                                                <option value="0">Nenhuma</option>
+                                                <option value="1">1 Bebê</option>
+                                                <option value="2">2 Bebês</option>
+                                                <option value="3">3 Bebês</option>
+                                                <option value="4">4 Bebês</option>
+                                                <option value="5">5 Bebês</option>
+                                                <option value="6">6 Bebês</option>
+                                                <option value="7">7 Bebês</option>
+                                                <option value="8">8 Bebês</option>
+                                                <option value="9">9 Bebês</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="button" class="btn btn-outline-primary float-right" id="btnPesquisar" value="Pesquisar" />
+                                        </div>
+                                    </div>
+
+                                    <!--<button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>-->
+                                </form>
+                            </div>
+
+
+                            <!--/card-block-->
+                        </div>
+                        <!-- /form card login -->
+                    </div>
+
+                </div>
+                <!--/row-->
+            </div>
+            <!--/col-->
+        </div>
+        <!--/row-->
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Confirmação do Pedido</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/Checkout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/site.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap-grid.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker3.css" />
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h2 class="text-center">Confirmação de Pedido</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <table class="table table-bordered table-striped" id="tablePedido">
+                    <tr>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Data de ida</th>
+                        <th>Data de retorno</th>
+                        <th>Total</th>
+                    </tr>
+
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <button class="btn btn-outline-primary" id="btnConfirmacaoPedido" style="display: none">Confirmar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <script src="../js/CheckoutPedido.js"></script>
+</body>
+</html>
